@@ -1,0 +1,89 @@
+/* Media Query für Bildschirme mit einer maximalen Breite von 1200px (kleinere Desktops und Tablets im Querformat) */
+@media only screen and (max-width: 1200px) {
+    /* Beispiel für Anpassungen im Header */
+    header h1 {
+        font-size: 28px;
+    }
+
+    /* Beispiel für Anpassungen in den Abschnitten (Sections) */
+    section {
+        margin-bottom: 25px;
+    }
+
+    /* Beispiel für Anpassungen im Footer */
+    footer {
+        font-size: 14px;
+    }
+}
+
+
+/* Media Query für Bildschirme mit einer maximalen Breite von 768px (Tablet) */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px; /* Beispiel für eine kleinere Schriftgröße im Header */
+    }
+
+    section {
+        margin-bottom: 20px; /* Beispiel für verringerten Abstand zwischen Abschnitten */
+    }
+
+    footer {
+        text-align: center; /* Beispiel für zentrierten Text im Footer */
+    }
+}
+
+/* Media Query für Bildschirme mit einer maximalen Breite von 576px (Handy) */
+@media only screen and (max-width: 576px) {
+    header h1 {
+        font-size: 20px; /* Beispiel für eine noch kleinere Schriftgröße im Header */
+    }
+
+    section {
+        margin-bottom: 15px; /* Beispiel für weiter verringerten Abstand zwischen Abschnitten */
+    }
+
+    footer {
+        font-size: 12px; /* Beispiel für kleinere Schriftgröße im Footer */
+    }
+}
+
+/* Section Styles für größere Bildschirme (Desktop) */
+section {
+    margin-bottom: 30px;
+}
+
+/* Media Query für Bildschirme mit einer maximalen Breite von 992px (kleinere Desktops und Tablets im Querformat) */
+@media only screen and (max-width: 992px) {
+    section {
+        margin-bottom: 20px; /* Beispiel für eine verringerte Margin auf Tablets im Querformat */
+    }
+}
+
+/* Media Query für Bildschirme mit einer maximalen Breite von 576px (Handy) */
+@media only screen and (max-width: 576px) {
+    section {
+        margin-bottom: 15px; /* Beispiel für eine verringerte Margin auf Handys */
+    }
+}
+
+/* Footer Styles für größere Bildschirme (Desktop) */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #96be25;
+    color: #fff;
+}
+
+/* Media Query für Bildschirme mit einer maximalen Breite von 768px (Tablet) */
+@media only screen and (max-width: 768px) {
+    footer {
+        font-size: 0.8em; /* Beispiel für eine kleinere Schriftgröße auf Tablets */
+    }
+}
+
+/* Media Query für Bildschirme mit einer maximalen Breite von 576px (Handy) */
+@media only screen and (max-width: 576px) {
+    footer {
+        font-size: 0.7em; /* Beispiel für eine kleinere Schriftgröße auf Handys */
+    }
+}

@@ -1,35 +1,41 @@
-*{
+/* Allgemeine Stile */
+
+* {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     margin: auto;
 }
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 20px;
     color: #1b1a1a;
-
 }
+
+/* Header-Stile */
 
 header {
     text-align: left;
     margin-bottom: 20px;
-    background-color:  #96be25;
+    background-color: #96be25;
     color: #fff;
-   
-    
 }
-header div{
+
+header div {
     display: inline-block;
 }
-header h1{
-   padding: 10px;
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
+
+header h1 {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-.icon{
+
+.icon {
     padding: 3px;
     margin-top: 5px;
     width: 12px;
@@ -37,30 +43,41 @@ header h1{
     border-radius: 100%;
 }
 
-h1{
-    color:#fff;
+h1 {
+    color: #fff;
     text-align: left;
     padding: 15px;
     margin-bottom: 5px;
-
 }
-h2{
-    color:#96be25;
+
+h2 {
+    color: #96be25;
     text-align: left;
 }
-.adress{
+
+/* Adresse-Stile */
+
+.adress {
     display: block;
     align-items: center;
     padding-left: 5px;
 }
 
-hr{
+/* Horizontal Rule-Stile */
+
+hr {
     border: 2px solid white;
 }
+
+/* Abschnitts-Stile */
+
 section {
     margin-bottom: 30px;
 }
-.github-link{
+
+/* Github-Link-Stile */
+
+.github-link {
     background-color: #96be25;
     width: 80px;
     height: 40px;
@@ -73,46 +90,51 @@ section {
     color: #1b1a1a;
     border-radius: 10%;
 }
-.github-link:hover{
+
+.github-link:hover {
     background-color: #333;
     color: #96be25;
 }
-#ziel .github-icon{
+
+#ziel .github-icon {
     width: 60px;
     height: 50px;
     border-radius: 100%;
-    padding: 0 5px ;
+    padding: 0 5px;
 }
-#ziel .b-foto{
-    display: flex; 
+
+#ziel .b-foto {
+    display: flex;
     margin-right: 50px;
     width: 200px;
     height: 200px;
-    border: 3px solid  transparent;
+    border: 3px solid transparent;
     transition: border-color 300ms ease-in-out;
     overflow: hidden;
     border-radius: 10px;
 }
-#ziel .b-foto:hover{
+
+#ziel .b-foto:hover {
     border-color: #96be25;
 }
-#ziel .b-foto:hover img{
+
+#ziel .b-foto:hover img {
     transition: transform 300ms ease-in-out;
 }
-
 
 #ziel {
     display: flex;
     justify-content: space-between;
 }
 
+/* Brief-Stile */
+
 .brief {
     max-width: 500px;
-} 
+}
 
-.brief p{
+.brief p {
     display: flex;
-    /* text-align: right; */
     margin: 5px 0;
 }
 
@@ -121,55 +143,159 @@ section {
     height: 12px;
     margin-right: 10px;
     border-radius: 50%;
-    align-items: right;
+    text-align: right;
 }
 
-.detail-1 p{
+.detail-1 p {
     display: inline-block;
 }
-.detail-1 span{
+
+.detail-1 span {
     display: flex;
     margin-left: 120px;
 }
-/* .ziel-info {
-    max-width: 400px; 
-} */
 
-#ziel .brief a .github{
+/* Ziel-Info-Stile */
+
+.ziel-info {
+    max-width: 400px;
+}
+
+#ziel .brief a .github {
     display: flex;
     width: 120px;
     height: 120px;
 }
 
+/* H2-Stile */
 
 h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
 }
 
+/* UL-Stile */
+
 ul {
     list-style-type: none;
     padding: 0;
 }
 
+/* LI-Stile */
+
 ul li {
     margin-bottom: 10px;
 }
 
+/* Datum-Stile */
+
 .date {
     font-style: italic;
 }
+
+/* Job-Titel-Stile */
 
 .job-title {
     font-style: italic;
     font-weight: bold;
 }
 
+/* Programmier-Sprachen-Stile */
+
 .languages {
     font-weight: bold;
-
 }
+
+/* Hobbys-Stile */
 
 .hobbies {
     font-weight: bold;
+}
+
+/* Media Queries */
+
+/* Media Query für Bildschirme mit einer maximalen Breite von 1200px (kleinere Desktops und Tablets im Querformat) */
+@media only screen and (max-width: 1200px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    section {
+        margin-bottom: 25px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* Media Query für Bildschirme mit einer maximalen Breite von 768px (Tablet) */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+/* Media Query für Bildschirme mit einer maximalen Breite von 576px (Handy) */
+@media only screen and (max-width: 576px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    section {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* Section-Stile für größere Bildschirme (Desktop) */
+section {
+    margin-bottom: 30px;
+}
+
+/* Media Query für Bildschirme mit einer maximalen Breite von 992px (kleinere Desktops und Tablets im Querformat) */
+@media only screen and (max-width: 992px) {
+    section {
+        margin-bottom: 20px;
+    }
+}
+
+/* Media Query für Bildschirme mit einer maximalen Breite von 576px (Handy) */
+@media only screen and (max-width: 576px) {
+    section {
+        margin-bottom: 15px;
+    }
+}
+
+/* Footer-Stile für größere Bildschirme (Desktop) */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #96be25;
+    color: #fff;
+}
+
+/* Media Query für Bildschirme mit einer maximalen Breite von 768px (Tablet) */
+@media only screen and (max-width: 768px) {
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+/* Media Query für Bildschirme mit einer maximalen Breite von 576px (Handy) */
+@media only screen and (max-width: 576px) {
+    footer {
+        font-size: 0.7em;
+    }
 }
