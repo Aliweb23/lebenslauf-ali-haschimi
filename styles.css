@@ -60,21 +60,46 @@ hr{
 section {
     margin-bottom: 30px;
 }
-
-#ziel img {
-    margin-right: 50px;
-    border: 3px solid #96be25;
-    border-radius: 8px;
-    width: 150px;
-    height: 170px;
-    /* margin-left: auto;  */
+.github-link{
+    background-color: #96be25;
+    width: 80px;
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    padding-top: 15px;
+    text-decoration: none;
+    align-self: flex-start;
+    text-align: center;
+    color: #1b1a1a;
+    border-radius: 10%;
+}
+.github-link:hover{
+    background-color: #333;
+    color: #96be25;
+}
+#ziel .github-icon{
+    width: 60px;
+    height: 50px;
+    border-radius: 100%;
+    padding: 0 5px ;
+}
+#ziel .b-foto{
     display: flex; 
-    /* cursor: pointer; */
+    margin-right: 50px;
+    width: 200px;
+    height: 200px;
+    border: 3px solid  transparent;
+    transition: border-color 300ms ease-in-out;
+    overflow: hidden;
+    border-radius: 10px;
 }
-#ziel img:hover{
-    border: 3px solid #414040;
-    border-radius: 8px;
+#ziel .b-foto:hover{
+    border-color: #96be25;
 }
+#ziel .b-foto:hover img{
+    transition: transform 300ms ease-in-out;
+}
+
 
 #ziel {
     display: flex;
