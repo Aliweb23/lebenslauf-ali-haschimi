@@ -110,10 +110,10 @@ section {
     max-width: 400px; 
 } */
 
-#ziel p .img{
+#ziel .brief a .github{
     display: flex;
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
 }
 
 
