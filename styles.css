@@ -105,13 +105,14 @@ section {
 
 #ziel .b-foto {
     display: flex;
-    margin-right: 50px;
+    /* margin-right: 50px; */
+    padding-right: 10px;
     width: 200px;
     height: 200px;
     border: 3px solid transparent;
     transition: border-color 300ms ease-in-out;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 10%;
 }
 
 #ziel .b-foto:hover {
