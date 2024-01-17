@@ -5,31 +5,24 @@
     padding: 0;
 } */
 html {
+    background: #d4d2d2;
     margin-left: auto;
     margin-right: auto;
 }
 
 body {
+    background: #d4d2d2;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 20px;
     color: #1b1a1a;
 }
-#container {
-    text-align: left; /* Änderung: Inhalt zentrieren */
-    line-height: 2;
-    margin-left: auto;
-    margin-right: auto; /* Hinzufügen: Centering des Containers selbst */
-}
-
-/* Header-Stile */
-
 header {
     text-align: left;
     margin-bottom: 20px;
     background-color: #96be25;
     color: #fff;
 }
-
+/* Header-Stile */
 header div {
     display: inline-block;
 }
@@ -59,6 +52,19 @@ h1 {
 h2 {
     color: #96be25;
     text-align: left;
+}
+
+
+#container {
+    max-width: 1200px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    line-height: 1.5;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 /* Adresse-Stile */
@@ -136,15 +142,19 @@ section {
 
 /* Brief-Stile */
 
-.brief {
-    max-width: 500px;
+div .brief {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
 }
 
 .brief p {
     display: flex;
     margin: 5px 0;
 }
-
+ div .brief .line{
+    border: 2px solid #96be25; 
+ }
 #ziel p .icon {
     width: 12px;
     height: 12px;
