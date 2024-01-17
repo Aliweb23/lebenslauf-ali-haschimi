@@ -1,18 +1,24 @@
 /* Allgemeine Stile */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
-
+} */
 html {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 20px;
     color: #1b1a1a;
+}
+#container {
+    text-align: left; /* Änderung: Inhalt zentrieren */
+    line-height: 2;
+    margin-left: auto;
+    margin-right: auto; /* Hinzufügen: Centering des Containers selbst */
 }
 
 /* Header-Stile */
