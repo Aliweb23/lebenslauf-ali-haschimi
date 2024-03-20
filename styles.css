@@ -60,6 +60,15 @@ h2 {
     text-align: left;
 }
 
+h2:hover{
+    display: inline-flex;
+    background-color: var(--secondary-bg-color);
+    color: var(--text-1-color);
+    text-align: left;
+    border-radius: 3%;
+    padding:5px;
+    margin: 0;
+}
 
 #container {
     max-width: 1200px;
